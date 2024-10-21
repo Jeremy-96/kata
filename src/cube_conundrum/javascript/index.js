@@ -7,21 +7,16 @@ const maximumColors = {
 };
 
 function main() {
-  const output = readFile();
-  const sortedGamesColors = sortColorsOfGames(output);
+  const sortedGamesColors = sortColorsOfGames();
   const gameAvailabilities = checkGameAvailabilities(sortedGamesColors, maximumColors);
 
   console.log(gameAvailabilities);
 };
 
-function readFile() {
-  return fs.readFileSync(input, 'utf-8');
-};
-
-function sortColorsOfGames(output) {
+function sortColorsOfGames() {
   let sortedColorsGamesBySet = [];
 
-  const games = output.split('\n');
+  const games = fs.readFileSync(input, 'utf-8').split('\n');
   const newGamesStructure = games.map((line) => {
     const game = line.split(':');
 

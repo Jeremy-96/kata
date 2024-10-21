@@ -1,5 +1,4 @@
 const fs = require("fs");
-
 const filteredDigits = extractNumberFromString();
 const total = addAllDigits();
 
