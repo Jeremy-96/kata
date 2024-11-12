@@ -10,7 +10,7 @@ function main() {
   const sortedGamesColors = sortColorsOfGames();
   const gameAvailabilities = checkGameAvailabilities(sortedGamesColors, maximumColors);
 
-  console.log(gameAvailabilities);
+  console.log({ gameAvailabilities });
 };
 
 function sortColorsOfGames() {

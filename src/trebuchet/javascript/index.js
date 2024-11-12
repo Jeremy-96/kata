@@ -20,4 +20,4 @@ function addAllDigits() {
   return digits.reduce((acc, curr) => +acc + +curr, 0)
 };
 
-console.log(total);
+console.log({ total });

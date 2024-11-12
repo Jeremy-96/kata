@@ -4,7 +4,7 @@ function main() {
   const file = fs.readFileSync('./gear_ratios.txt', 'utf-8');
   const result = resolveGearRatiosSchema(file);
 
-  console.log(result);
+  console.log({ result });
 };
 
 function resolveGearRatiosSchema(input) {
